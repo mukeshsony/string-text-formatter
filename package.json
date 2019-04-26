@@ -10,13 +10,16 @@
     "test": "mocha --reporter spec"
   },
   "author": "Mukesh Soni",
+  "license": "MIT",
   "keywords": [
     "format string text",
     "format url slug",
     "unique format url slug",
     "random string"
   ],
-  "license": "ISC",
+"bugs": {
+    "url": "https://github.com/mukeshsony/string-text-formatter/issues"
+  },
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
