@@ -1,7 +1,7 @@
 {
   "name": "string-text-formatter",
   "version": "1.0.2",
-  "description": "Format string text for seo friendly url slug,  seo friendly url slug with unique id",
+  "description": "Format string text for seo friendly url slug,  seo friendly url slug with unique id, random string",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -14,7 +14,7 @@
     "format string text",
     "format url slug",
     "unique format url slug",
-    "randon string"
+    "random string"
   ],
   "license": "ISC",
   "devDependencies": {
