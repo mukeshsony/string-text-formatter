@@ -1,7 +1,7 @@
 {
   "name": "string-text-formatter",
   "version": "1.0.2",
-  "description": "Format string text for seo friendly url slug,  seo friendly url slug with unique id, random string",
+  "description": "Format string text for seo friendly url slug,  seo friendly url slug with unique id, random string generator",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
