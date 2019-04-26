@@ -1,6 +1,6 @@
 # string-text-formatter	
 
-> Format string text for seo friendly url slug,  seo friendly url slug with unique id, random string
+> Format string text for seo friendly url slug,  seo friendly url slug with unique id, random string generator
 
 
 
