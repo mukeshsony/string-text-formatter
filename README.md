@@ -62,9 +62,9 @@ console.log(urlSlugUnqiue);
 // Generate random string method
 
 // genetate alfhanumeric string
-@params
-length: total string length (Default 8)
-allowSpecialCharacters: true / false
+//@params
+//length: total string length (Default 8)
+//allowSpecialCharacters: true / false
 const string1 = text.randomString(12, false);
 
 console.log(string1);
