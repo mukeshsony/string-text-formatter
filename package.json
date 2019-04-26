@@ -14,8 +14,8 @@
   "keywords": [
     "format string text",
     "format url slug",
-    "unique format url slug",
-    "random string"
+    "unique url slug",
+    "generate random string"
   ],
 "bugs": {
     "url": "https://github.com/mukeshsony/string-text-formatter/issues"
