@@ -1,0 +1,29 @@
+{
+  "name": "string-text-formatter",
+  "version": "1.0.2",
+  "description": "Format string text for seo friendly url slug,  seo friendly url slug with unique id",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "tslint --project \"./tsconfig.json\"",
+    "test": "mocha --reporter spec"
+  },
+  "author": "Mukesh Soni",
+  "keywords": [
+    "format string text",
+    "format url slug",
+    "unique format url slug",
+    "randon string"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.4"
+  }
+}
