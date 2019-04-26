@@ -60,20 +60,22 @@ console.log(urlSlugUnqiue);
 
 
 // Generate random string method
-
 // genetate alfhanumeric string
 // @params
 // length: total string length (Default 8)
 // allowSpecialCharacters: true / false
+
+
 const string1 = text.randomString(12, false);
 
 console.log(string1);
 // xg7IqOAqo97v
 
 
+
 const string2 = text.randomString(12, true);
 
-console.log(string1);
+console.log(string2);
 // _HNu19-C^ohH
 
 ```
