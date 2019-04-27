@@ -1,13 +1,15 @@
 {
   "name": "string-text-formatter",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "Format string text for seo friendly url slug,  seo friendly url slug with unique id, random string generator",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
     "lint": "tslint --project \"./tsconfig.json\"",
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec",
+    "ci": "npm run lint && npm run build && npm run cover"
   },
   "author": "Mukesh Soni",
   "license": "MIT",
@@ -17,14 +19,22 @@
     "unique url slug",
     "generate random string"
   ],
-"bugs": {
+  "bugs": {
     "url": "https://github.com/mukeshsony/string-text-formatter/issues"
+  },
+  "homepage": "https://github.com/mukeshsony/string-text-formatter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukeshsony/string-text-formatter.git"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
+    "@types/istanbul": "^0.4.30",
     "@types/mocha": "^5.2.6",
     "@types/node": "^11.13.6",
     "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "istanbul": "^0.4.5",
     "mocha": "^6.1.4",
     "tslint": "^5.16.0",
     "typescript": "^3.4.4"

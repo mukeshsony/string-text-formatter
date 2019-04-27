@@ -15,7 +15,7 @@ function lowerCase(str) {
     let formattedString = '';
     if (typeof str !== 'undefined' && str !== null && str.trim() !== '') {
         formattedString = str.trim();
-        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, "");
+        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, '');
         formattedString = formattedString.replace(/  +/g, ' ');
         formattedString = formattedString.toLowerCase();
     }
@@ -30,7 +30,7 @@ function upperCase(str) {
     let formattedString = '';
     if (typeof str !== 'undefined' && str !== null && str.trim() !== '') {
         formattedString = str.trim();
-        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, "");
+        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, '');
         formattedString = formattedString.replace(/  +/g, ' ');
         formattedString = formattedString.toUpperCase();
     }
@@ -46,7 +46,7 @@ function convertString(str, seprator) {
     let formattedString = '';
     if (typeof str !== 'undefined' && str !== null && str.trim() !== '') {
         formattedString = str.trim();
-        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, "");
+        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, '');
         formattedString = formattedString.replace(/  +/g, ' ');
         formattedString = formattedString.split(' ').join(seprator);
     }
@@ -61,7 +61,7 @@ function urlSlug(str) {
     let formattedString = '';
     if (typeof str !== 'undefined' && str !== null && str.trim() !== '') {
         formattedString = str.trim();
-        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, "");
+        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, '');
         formattedString = formattedString.replace(/  +/g, ' ');
         formattedString = formattedString.replace(/\s+/g, '-');
         formattedString = formattedString.toLowerCase();
@@ -79,7 +79,7 @@ function urlSlugUnqiue(str) {
     if (typeof str !== 'undefined' && str !== null && str.trim() !== '') {
         const timestamp = Math.round((new Date()).getTime());
         formattedString = str.trim();
-        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, "");
+        formattedString = formattedString.replace(/[^a-zA-Z0-9 ]/g, '');
         formattedString = formattedString.replace(/  +/g, ' ');
         formattedString = formattedString.replace(/\s+/g, '-');
         formattedString = formattedString.toLowerCase();
@@ -96,10 +96,13 @@ exports.urlSlugUnqiue = urlSlugUnqiue;
 function randomString(length = 8, allowSpecialCharacters = true) {
     let charset;
     if (allowSpecialCharacters) {
-        charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&()*+,-./:;<=>?@[\]^_{|}~";
+        let mixCharSet = '';
+        mixCharSet += 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        mixCharSet += '!#$%&()*+,-./:;<=>?@[\]^_{|}~';
+        charset = mixCharSet;
     }
     else {
-        charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     }
     let randomStringValue = '';
     for (let i = 0, n = charset.length; i < length; ++i) {
